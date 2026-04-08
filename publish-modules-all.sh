@@ -24,10 +24,10 @@ PARENT_DIR="$(dirname "$SCRIPT_DIR")"
 ALL_MODULES=(
   "stellar-harvest-ie-config"   # no internal dependencies
   "stellar-harvest-ie-models"
+  "stellar-harvest-ie-store"
   "stellar-harvest-ie-producers"
   "stellar-harvest-ie-stream"
   "stellar-harvest-ie-consumers"
-  "stellar-harvest-ie-store"
   "stellar-harvest-ie-ui"
 )
 
