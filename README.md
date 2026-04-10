@@ -16,30 +16,31 @@
 
     * Depends on ```stellar-harvest-ie-config```
 
-3. **[stellar-harvest-ie-store](https://github.com/machinelearning-maverick/stellar-harvest-ie-store)**
+3. **[stellar-harvest-ie-stream](https://github.com/machinelearning-maverick/stellar-harvest-ie-stream)**
+
+    Thin wrapper around Kafka client factories and stream configuration.
+
+    * Depends on ```stellar-harvest-ie-config```
+
+4. **[stellar-harvest-ie-store](https://github.com/machinelearning-maverick/stellar-harvest-ie-store)**
 
     Persistence layer: database engine, session factory, and schema initialization.
 
     * Depends on ```stellar-harvest-ie-config```
     * Depends on ```stellar-harvest-ie-models```
 
-4. **[stellar-harvest-ie-producers](https://github.com/machinelearning-maverick/stellar-harvest-ie-producers)**
+5. **[stellar-harvest-ie-producers](https://github.com/machinelearning-maverick/stellar-harvest-ie-producers)**
 
     Ingestion module for real-time data sources (e.g., NOAA SWPC) into Kafka.
 
     * Depends on ```stellar-harvest-ie-config```
     * Depends on ```stellar-harvest-ie-models```
 
-5. **[stellar-harvest-ie-stream](https://github.com/machinelearning-maverick/stellar-harvest-ie-stream)**
-
-    Thin wrapper around Kafka client factories and stream configuration.
-
-    * Depends on ```stellar-harvest-ie-producers```
-
 6. **[stellar-harvest-ie-consumers](https://github.com/machinelearning-maverick/stellar-harvest-ie-consumers)**
 
     Kafka-to-Postgres consumer module. Handles streaming data, and preparing it for persisting.
     
+    * Depends on ```stellar-harvest-ie-config```
     * Depends on ```stellar-harvest-ie-models```
     * Depends on ```stellar-harvest-ie-store```
 

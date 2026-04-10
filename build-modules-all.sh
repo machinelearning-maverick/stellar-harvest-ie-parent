@@ -1,6 +1,6 @@
 #!/bin/bash
 # Run this once after cloning all repos:
-#   bash stellar-harvest-insight-engine/bootstrap.sh
+#   bash stellar-harvest-insight-engine/stellar-harvest-ie-parent/build-modules-all.sh
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PARENT_DIR="$(dirname "$SCRIPT_DIR")"
