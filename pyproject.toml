@@ -8,6 +8,7 @@ members = [
     "stellar-harvest-ie-consumers",
     "stellar-harvest-ie-ui",
     "stellar-harvest-ie-ml-stellar",
+    "stellar-harvest-ie-tests",
 ]
 
 [tool.uv.sources]
@@ -19,3 +20,4 @@ stellar-harvest-ie-producers = { workspace = true }
 stellar-harvest-ie-consumers = { workspace = true }
 stellar-harvest-ie-ui = { workspace = true }
 stellar-harvest-ie-ml-stellar = { workspace = true }
+stellar-harvest-ie-tests = { workspace = true }
