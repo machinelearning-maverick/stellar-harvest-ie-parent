@@ -11,5 +11,5 @@ cp "$SCRIPT_DIR/pyproject.toml" "$PARENT_DIR/pyproject.toml"
 cd "$PARENT_DIR"
 pwd
 
-echo "Running uv sync..."
-uv sync
+echo "Running uv..."
+uv cache clean && uv sync --all-packages --reinstall
