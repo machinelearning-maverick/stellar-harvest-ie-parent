@@ -34,6 +34,7 @@ ALL_MODULES=(
   "stellar-harvest-ie-store"
   "stellar-harvest-ie-producers"
   "stellar-harvest-ie-consumers"
+  "stellar-harvest-ie-ml-stellar"
   "stellar-harvest-ie-ui"
 )
 
